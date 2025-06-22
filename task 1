@@ -1,1 +1,32 @@
 
+use customer;
+select * from account;
+select * from customer;
+
+SELECT *
+FROM account a
+INNER JOIN customer c
+ON a.customer_id = c.customer_id;
+
+SELECT *
+FROM account a
+LEFT JOIN customer c
+ON a.customer_id = c.customer_id;
+
+SELECT *
+FROM account a
+RIGHT JOIN customer c
+ON a.customer_id = c.customer_id;
+
+SELECT *
+FROM account a
+LEFT JOIN customer c
+ON a.customer_id = c.customer_id
+
+UNION
+
+SELECT *
+FROM account a
+RIGHT JOIN customer c
+ON a.customer_id = c.customer_id;
+
